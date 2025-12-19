@@ -18,13 +18,13 @@ Master the basics of Rust programming language, from syntax to ownership concept
 - [x] The Unit Type `[BEGINNER]`
 - [x] Functions `[BEGINNER]`
 - [x] Control Flow `[BEGINNER]`
-- [ ] Ownership `[EASY]`
+- [x] Ownership `[EASY]`
 - [x] Mutable References `[BEGINNER]`
-- [ ] Ownership Rules `[EASY]`
+- [x] Ownership Rules `[EASY]`
 - [x] Character counting string `[BEGINNER]`
-- [ ] Slices `[EASY]`
-- [ ] Mutable Slices `[EASY]`
-- [ ] Slice Manipulation `[MEDIUM]`
+- [x] Slices `[EASY]`
+- [x] Mutable Slices `[EASY]`
+- [x] Slice Manipulation `[MEDIUM]`
 - [ ] Structs `[EASY]`
 - [ ] Tuple Structs `[EASY]`
 - [ ] Constructors `[EASY]`
@@ -86,9 +86,9 @@ Master the basics of Rust programming language, from syntax to ownership concept
 ## Statistics
 
 - **Total Problems**: 76
-- **Completed**: 14
-- **Remaining**: 62
-- **Progress**: 18.4%
+- **Completed**: 19
+- **Remaining**: 57
+- **Progress**: 25.0%
 
 ---
 
