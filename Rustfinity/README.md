@@ -25,24 +25,24 @@ Master the basics of Rust programming language, from syntax to ownership concept
 - [x] Slices `[EASY]`
 - [x] Mutable Slices `[EASY]`
 - [x] Slice Manipulation `[MEDIUM]`
-- [ ] Structs `[EASY]`
-- [ ] Tuple Structs `[EASY]`
+- [x] Structs `[EASY]`
+- [x] Tuple Structs `[EASY]`
 - [ ] Constructors `[EASY]`
 - [ ] Unit Structs `[EASY]`
-- [ ] Methods on Structs `[EASY]`
+- [x] Methods on Structs `[EASY]`
 - [ ] Implementing Debug Trait for Structs `[EASY]`
-- [ ] Enums `[EASY]`
+- [x] Enums `[EASY]`
 - [ ] Playing Cards `[EASY]`
 - [ ] Complex Enums `[MEDIUM]`
 - [ ] Methods on Enums `[MEDIUM]`
 - [ ] Deriving PartialEq `[EASY]`
-- [ ] If Let Enums `[EASY]`
+- [x] If Let Enums `[EASY]`
 - [ ] Vectors `[EASY]`
 - [ ] Hashmaps `[EASY]`
 - [ ] Animal sanctuary registry `[MEDIUM]`
 - [ ] Student Grades Tracker `[MEDIUM]`
 - [ ] Student Grades Tracker 2 `[MEDIUM]`
-- [ ] Using Option<T> for Optional Values `[EASY]`
+- [x] Using Option<T> for Optional Values `[EASY]`
 - [ ] Graceful error handling `[EASY]`
 - [ ] Graceful error handling 2 `[MEDIUM]`
 - [ ] Error Propagation in File Handling `[EASY]`
@@ -86,9 +86,9 @@ Master the basics of Rust programming language, from syntax to ownership concept
 ## Statistics
 
 - **Total Problems**: 76
-- **Completed**: 19
-- **Remaining**: 57
-- **Progress**: 25.0%
+- **Completed**: 25
+- **Remaining**: 51
+- **Progress**: 32.9%
 
 ---
 
