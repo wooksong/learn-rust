@@ -30,9 +30,9 @@ Master the basics of Rust programming language, from syntax to ownership concept
 - [ ] Constructors `[EASY]`
 - [ ] Unit Structs `[EASY]`
 - [x] Methods on Structs `[EASY]`
-- [ ] Implementing Debug Trait for Structs `[EASY]`
+- [x] Implementing Debug Trait for Structs `[EASY]`
 - [x] Enums `[EASY]`
-- [ ] Playing Cards `[EASY]`
+- [x] Playing Cards `[EASY]`
 - [ ] Complex Enums `[MEDIUM]`
 - [ ] Methods on Enums `[MEDIUM]`
 - [ ] Deriving PartialEq `[EASY]`
@@ -86,9 +86,9 @@ Master the basics of Rust programming language, from syntax to ownership concept
 ## Statistics
 
 - **Total Problems**: 76
-- **Completed**: 25
-- **Remaining**: 51
-- **Progress**: 32.9%
+- **Completed**: 27
+- **Remaining**: 49
+- **Progress**: 35.5%
 
 ---
 
