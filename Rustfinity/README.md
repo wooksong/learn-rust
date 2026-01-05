@@ -27,8 +27,8 @@ Master the basics of Rust programming language, from syntax to ownership concept
 - [x] Slice Manipulation `[MEDIUM]`
 - [x] Structs `[EASY]`
 - [x] Tuple Structs `[EASY]`
-- [ ] Constructors `[EASY]`
-- [ ] Unit Structs `[EASY]`
+- [x] Constructors `[EASY]`
+- [x] Unit Structs `[EASY]`
 - [x] Methods on Structs `[EASY]`
 - [x] Implementing Debug Trait for Structs `[EASY]`
 - [x] Enums `[EASY]`
@@ -37,23 +37,23 @@ Master the basics of Rust programming language, from syntax to ownership concept
 - [ ] Methods on Enums `[MEDIUM]`
 - [ ] Deriving PartialEq `[EASY]`
 - [x] If Let Enums `[EASY]`
-- [ ] Vectors `[EASY]`
-- [ ] Hashmaps `[EASY]`
+- [x] Vectors `[EASY]`
+- [x] Hashmaps `[EASY]`
 - [ ] Animal sanctuary registry `[MEDIUM]`
 - [ ] Student Grades Tracker `[MEDIUM]`
 - [ ] Student Grades Tracker 2 `[MEDIUM]`
 - [x] Using Option<T> for Optional Values `[EASY]`
-- [ ] Graceful error handling `[EASY]`
-- [ ] Graceful error handling 2 `[MEDIUM]`
+- [x] Graceful error handling `[EASY]`
+- [x] Graceful error handling 2 `[MEDIUM]`
 - [ ] Error Propagation in File Handling `[EASY]`
 - [ ] Option Propagation in Rust `[EASY]`
 - [ ] Result to Option `[EASY]`
 - [ ] Option to Result `[EASY]`
-- [ ] Panic `[MEDIUM]`
+- [x] Panic `[MEDIUM]`
 - [ ] unwrap and expect `[MEDIUM]`
-- [ ] Traits `[EASY]`
-- [ ] Generics `[EASY]`
-- [ ] Trait Bounds `[EASY]`
+- [x] Traits `[EASY]`
+- [x] Generics `[EASY]`
+- [x] Trait Bounds `[EASY]`
 - [ ] The AsRef Trait `[MEDIUM]`
 - [ ] The From trait `[MEDIUM]`
 - [ ] Returning impl Trait `[EASY]`
@@ -86,9 +86,9 @@ Master the basics of Rust programming language, from syntax to ownership concept
 ## Statistics
 
 - **Total Problems**: 76
-- **Completed**: 27
-- **Remaining**: 49
-- **Progress**: 35.5%
+- **Completed**: 37
+- **Remaining**: 39
+- **Progress**: 48.7%
 
 ---
 
