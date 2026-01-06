@@ -18,7 +18,6 @@ rustlings
 - [x] move_semantics (1-5)
 - [x] enums (1-3)
 - [x] options (1-3)
-
-## In Progress
-
-- [ ] errors
+- [x] errors (1-6)
+- [x] generics (1-2)
+- [x] traits (1-5)
