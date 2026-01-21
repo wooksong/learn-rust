@@ -40,8 +40,8 @@ Master the basics of Rust programming language, from syntax to ownership concept
 - [x] Vectors `[EASY]`
 - [x] Hashmaps `[EASY]`
 - [x] Animal sanctuary registry `[MEDIUM]`
-- [ ] Student Grades Tracker `[MEDIUM]`
-- [ ] Student Grades Tracker 2 `[MEDIUM]`
+- [x] Student Grades Tracker `[MEDIUM]`
+- [x] Student Grades Tracker 2 `[MEDIUM]`
 - [x] Using Option<T> for Optional Values `[EASY]`
 - [x] Graceful error handling `[EASY]`
 - [x] Graceful error handling 2 `[MEDIUM]`
@@ -86,9 +86,9 @@ Master the basics of Rust programming language, from syntax to ownership concept
 ## Statistics
 
 - **Total Problems**: 76
-- **Completed**: 41
-- **Remaining**: 35
-- **Progress**: 53.9%
+- **Completed**: 43
+- **Remaining**: 33
+- **Progress**: 56.6%
 
 ---
 
