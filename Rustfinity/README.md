@@ -33,13 +33,13 @@ Master the basics of Rust programming language, from syntax to ownership concept
 - [x] Implementing Debug Trait for Structs `[EASY]`
 - [x] Enums `[EASY]`
 - [x] Playing Cards `[EASY]`
-- [ ] Complex Enums `[MEDIUM]`
-- [ ] Methods on Enums `[MEDIUM]`
-- [ ] Deriving PartialEq `[EASY]`
+- [x] Complex Enums `[MEDIUM]`
+- [x] Methods on Enums `[MEDIUM]`
+- [x] Deriving PartialEq `[EASY]`
 - [x] If Let Enums `[EASY]`
 - [x] Vectors `[EASY]`
 - [x] Hashmaps `[EASY]`
-- [ ] Animal sanctuary registry `[MEDIUM]`
+- [x] Animal sanctuary registry `[MEDIUM]`
 - [ ] Student Grades Tracker `[MEDIUM]`
 - [ ] Student Grades Tracker 2 `[MEDIUM]`
 - [x] Using Option<T> for Optional Values `[EASY]`
@@ -86,9 +86,9 @@ Master the basics of Rust programming language, from syntax to ownership concept
 ## Statistics
 
 - **Total Problems**: 76
-- **Completed**: 37
-- **Remaining**: 39
-- **Progress**: 48.7%
+- **Completed**: 41
+- **Remaining**: 35
+- **Progress**: 53.9%
 
 ---
 
