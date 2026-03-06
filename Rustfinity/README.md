@@ -62,8 +62,8 @@ Master the basics of Rust programming language, from syntax to ownership concept
 - [ ] Associated types `[MEDIUM]`
 - [ ] Supertraits `[MEDIUM]`
 - [ ] Plugin System `[HARD]`
-- [ ] Lifetimes `[MEDIUM]`
-- [ ] Structs and references `[MEDIUM]`
+- [x] Lifetimes `[MEDIUM]`
+- [x] Structs and references `[MEDIUM]`
 - [ ] Mutable Struct References `[MEDIUM]`
 - [ ] Closures `[BEGINNER]`
 - [ ] Closure Types `[MEDIUM]`
@@ -86,9 +86,9 @@ Master the basics of Rust programming language, from syntax to ownership concept
 ## Statistics
 
 - **Total Problems**: 76
-- **Completed**: 43
-- **Remaining**: 33
-- **Progress**: 56.6%
+- **Completed**: 45
+- **Remaining**: 31
+- **Progress**: 59.2%
 
 ---
 
