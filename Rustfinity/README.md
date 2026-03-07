@@ -45,12 +45,12 @@ Master the basics of Rust programming language, from syntax to ownership concept
 - [x] Using Option<T> for Optional Values `[EASY]`
 - [x] Graceful error handling `[EASY]`
 - [x] Graceful error handling 2 `[MEDIUM]`
-- [ ] Error Propagation in File Handling `[EASY]`
-- [ ] Option Propagation in Rust `[EASY]`
-- [ ] Result to Option `[EASY]`
-- [ ] Option to Result `[EASY]`
+- [x] Error Propagation in File Handling `[EASY]`
+- [x] Option Propagation in Rust `[EASY]`
+- [x] Result to Option `[EASY]`
+- [x] Option to Result `[EASY]`
 - [x] Panic `[MEDIUM]`
-- [ ] unwrap and expect `[MEDIUM]`
+- [x] unwrap and expect `[MEDIUM]`
 - [x] Traits `[EASY]`
 - [x] Generics `[EASY]`
 - [x] Trait Bounds `[EASY]`
@@ -86,9 +86,9 @@ Master the basics of Rust programming language, from syntax to ownership concept
 ## Statistics
 
 - **Total Problems**: 76
-- **Completed**: 45
-- **Remaining**: 31
-- **Progress**: 59.2%
+- **Completed**: 50
+- **Remaining**: 26
+- **Progress**: 65.8%
 
 ---
 
