@@ -64,14 +64,14 @@ Master the basics of Rust programming language, from syntax to ownership concept
 - [ ] Plugin System `[HARD]`
 - [x] Lifetimes `[MEDIUM]`
 - [x] Structs and references `[MEDIUM]`
-- [ ] Mutable Struct References `[MEDIUM]`
+- [x] Mutable Struct References `[MEDIUM]`
 - [ ] Closures `[BEGINNER]`
 - [ ] Closure Types `[MEDIUM]`
-- [ ] Iterators `[MEDIUM]`
+- [x] Iterators `[MEDIUM]`
 - [ ] Unique Items `[MEDIUM]`
-- [ ] Box<T> `[EASY]`
-- [ ] The Drop Trait `[MEDIUM]`
-- [ ] Rc<T> `[MEDIUM]`
+- [x] Box<T> `[EASY]`
+- [x] The Drop Trait `[MEDIUM]`
+- [x] Rc<T> `[MEDIUM]`
 - [ ] Interior Mutability `[MEDIUM]`
 - [ ] Concurrency `[MEDIUM]`
 - [ ] Channels `[MEDIUM]`
@@ -86,9 +86,9 @@ Master the basics of Rust programming language, from syntax to ownership concept
 ## Statistics
 
 - **Total Problems**: 76
-- **Completed**: 50
-- **Remaining**: 26
-- **Progress**: 65.8%
+- **Completed**: 55
+- **Remaining**: 21
+- **Progress**: 72.4%
 
 ---
 
