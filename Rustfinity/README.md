@@ -65,7 +65,7 @@ Master the basics of Rust programming language, from syntax to ownership concept
 - [x] Lifetimes `[MEDIUM]`
 - [x] Structs and references `[MEDIUM]`
 - [x] Mutable Struct References `[MEDIUM]`
-- [ ] Closures `[BEGINNER]`
+- [x] Closures `[BEGINNER]`
 - [x] Closure Types `[MEDIUM]`
 - [x] Iterators `[MEDIUM]`
 - [ ] Unique Items `[MEDIUM]`
@@ -86,9 +86,9 @@ Master the basics of Rust programming language, from syntax to ownership concept
 ## Statistics
 
 - **Total Problems**: 76
-- **Completed**: 56
-- **Remaining**: 20
-- **Progress**: 73.7%
+- **Completed**: 57
+- **Remaining**: 19
+- **Progress**: 75.0%
 
 ---
 
