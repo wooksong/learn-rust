@@ -54,10 +54,10 @@ Master the basics of Rust programming language, from syntax to ownership concept
 - [x] Traits `[EASY]`
 - [x] Generics `[EASY]`
 - [x] Trait Bounds `[EASY]`
-- [ ] The AsRef Trait `[MEDIUM]`
-- [ ] The From trait `[MEDIUM]`
-- [ ] Returning impl Trait `[EASY]`
-- [ ] Return Trait Objects `[MEDIUM]`
+- [x] The AsRef Trait `[MEDIUM]`
+- [x] The From trait `[MEDIUM]`
+- [x] Returning impl Trait `[EASY]`
+- [x] Return Trait Objects `[MEDIUM]`
 - [ ] Trait Objects `[MEDIUM]`
 - [ ] Associated types `[MEDIUM]`
 - [ ] Supertraits `[MEDIUM]`
@@ -86,9 +86,9 @@ Master the basics of Rust programming language, from syntax to ownership concept
 ## Statistics
 
 - **Total Problems**: 76
-- **Completed**: 57
-- **Remaining**: 19
-- **Progress**: 75.0%
+- **Completed**: 61
+- **Remaining**: 15
+- **Progress**: 80.3%
 
 ---
 
