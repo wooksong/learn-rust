@@ -58,9 +58,9 @@ Master the basics of Rust programming language, from syntax to ownership concept
 - [x] The From trait `[MEDIUM]`
 - [x] Returning impl Trait `[EASY]`
 - [x] Return Trait Objects `[MEDIUM]`
-- [ ] Trait Objects `[MEDIUM]`
-- [ ] Associated types `[MEDIUM]`
-- [ ] Supertraits `[MEDIUM]`
+- [x] Trait Objects `[MEDIUM]`
+- [x] Associated types `[MEDIUM]`
+- [x] Supertraits `[MEDIUM]`
 - [ ] Plugin System `[HARD]`
 - [x] Lifetimes `[MEDIUM]`
 - [x] Structs and references `[MEDIUM]`
@@ -80,15 +80,15 @@ Master the basics of Rust programming language, from syntax to ownership concept
 - [ ] Advanced Traits `[MEDIUM]`
 - [ ] Macros `[EASY]`
 - [ ] Macros 2 `[MEDIUM]`
-- [ ] The Default Trait `[EASY]`
+- [x] The Default Trait `[EASY]`
 - [ ] Procedural macros `[HARD]`
 
 ## Statistics
 
 - **Total Problems**: 76
-- **Completed**: 61
-- **Remaining**: 15
-- **Progress**: 80.3%
+- **Completed**: 65
+- **Remaining**: 11
+- **Progress**: 85.5%
 
 ---
 
