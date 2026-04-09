@@ -38,4 +38,4 @@ rustlings
 - [x] threads (1-3)
 - [x] macros (1-4)
 - [x] clippy (1-3)
-- [ ] conversions (1-5)
+- [x] conversions (1-5)
