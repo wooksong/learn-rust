@@ -78,17 +78,17 @@ Master the basics of Rust programming language, from syntax to ownership concept
 - [ ] Shared State Concurrency `[MEDIUM]`
 - [ ] Advanced Match Patterns `[HARD]`
 - [ ] Advanced Traits `[MEDIUM]`
-- [ ] Macros `[EASY]`
-- [ ] Macros 2 `[MEDIUM]`
+- [x] Macros `[EASY]`
+- [x] Macros 2 `[MEDIUM]`
 - [x] The Default Trait `[EASY]`
-- [ ] Procedural macros `[HARD]`
+- [x] Procedural macros `[HARD]`
 
 ## Statistics
 
 - **Total Problems**: 76
-- **Completed**: 65
-- **Remaining**: 11
-- **Progress**: 85.5%
+- **Completed**: 68
+- **Remaining**: 8
+- **Progress**: 89.5%
 
 ---
 
