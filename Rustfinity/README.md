@@ -61,14 +61,14 @@ Master the basics of Rust programming language, from syntax to ownership concept
 - [x] Trait Objects `[MEDIUM]`
 - [x] Associated types `[MEDIUM]`
 - [x] Supertraits `[MEDIUM]`
-- [ ] Plugin System `[HARD]`
+- [x] Plugin System `[HARD]`
 - [x] Lifetimes `[MEDIUM]`
 - [x] Structs and references `[MEDIUM]`
 - [x] Mutable Struct References `[MEDIUM]`
 - [x] Closures `[BEGINNER]`
 - [x] Closure Types `[MEDIUM]`
 - [x] Iterators `[MEDIUM]`
-- [ ] Unique Items `[MEDIUM]`
+- [x] Unique Items `[MEDIUM]`
 - [x] Box<T> `[EASY]`
 - [x] The Drop Trait `[MEDIUM]`
 - [x] Rc<T> `[MEDIUM]`
@@ -86,9 +86,9 @@ Master the basics of Rust programming language, from syntax to ownership concept
 ## Statistics
 
 - **Total Problems**: 76
-- **Completed**: 74
-- **Remaining**: 2
-- **Progress**: 97.4%
+- **Completed**: 76
+- **Remaining**: 0
+- **Progress**: 100%
 
 ---
 
