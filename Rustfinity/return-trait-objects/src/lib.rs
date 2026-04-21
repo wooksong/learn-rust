@@ -26,12 +26,14 @@ impl Speakable for Robot {
 
 pub fn get_speaker(kind: &str) -> Box<dyn Speakable> {
     match kind {
-        "dog" => {
-            Box::new(Dog {name: "Rex".to_string(), breed: "Labrador".to_string()})
-        }
-        "robot" => {
-            Box::new(Robot {model: "Eva".to_string(), purpose: "Fight with Angel".to_string()})
-        }
+        "dog" => Box::new(Dog {
+            name: "Rex".to_string(),
+            breed: "Labrador".to_string(),
+        }),
+        "robot" => Box::new(Robot {
+            model: "Eva".to_string(),
+            purpose: "Fight with Angel".to_string(),
+        }),
         _ => panic!("Unknown speaker type"),
     }
 }

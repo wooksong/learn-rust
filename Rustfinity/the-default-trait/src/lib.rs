@@ -12,7 +12,7 @@ pub struct AppConfig {
 
 impl Default for AppConfig {
     fn default() -> Self {
-        Self{
+        Self {
             theme: "Light".to_string(),
             notifications_enabled: true,
             max_users: 100,

@@ -7,7 +7,7 @@ pub fn calculate_and_modify() -> (String, usize) {
         let s2 = &s;
 
         println!("{}", s2);
-    } 
+    }
 
     (s, length)
 }

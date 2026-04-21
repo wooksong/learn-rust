@@ -32,13 +32,12 @@ impl StudentGrades {
         if let Some(student) = map.get_mut(&name.to_string()) {
             student.grades.push(grade);
         }
-        
     }
 
     pub fn get_grades(&self, name: &str) -> &[u8] {
         let map = &self.students;
         let student = map.get(&name.to_string());
-        
+
         &student.unwrap().grades
     }
 }

@@ -1,7 +1,7 @@
 pub enum VehicleStatus {
     Parked,
     Driving { speed: u32 },
-    BrokenDown(String)
+    BrokenDown(String),
 }
 
 impl VehicleStatus {
@@ -15,7 +15,7 @@ impl VehicleStatus {
     pub fn description(&self) -> String {
         match self {
             VehicleStatus::Parked => "The vehicle is parked.".to_string(),
-            VehicleStatus::Driving{ speed } => format!("The vehicle is driving at {speed} km/h."),
+            VehicleStatus::Driving { speed } => format!("The vehicle is driving at {speed} km/h."),
             VehicleStatus::BrokenDown(reason) => format!("The vehicle is broken down: {reason}."),
         }
     }
