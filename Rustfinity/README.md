@@ -72,12 +72,12 @@ Master the basics of Rust programming language, from syntax to ownership concept
 - [x] Box<T> `[EASY]`
 - [x] The Drop Trait `[MEDIUM]`
 - [x] Rc<T> `[MEDIUM]`
-- [ ] Interior Mutability `[MEDIUM]`
-- [ ] Concurrency `[MEDIUM]`
-- [ ] Channels `[MEDIUM]`
-- [ ] Shared State Concurrency `[MEDIUM]`
-- [ ] Advanced Match Patterns `[HARD]`
-- [ ] Advanced Traits `[MEDIUM]`
+- [x] Interior Mutability `[MEDIUM]`
+- [x] Concurrency `[MEDIUM]`
+- [x] Channels `[MEDIUM]`
+- [x] Shared State Concurrency `[MEDIUM]`
+- [x] Advanced Match Patterns `[HARD]`
+- [x] Advanced Traits `[MEDIUM]`
 - [x] Macros `[EASY]`
 - [x] Macros 2 `[MEDIUM]`
 - [x] The Default Trait `[EASY]`
@@ -86,9 +86,9 @@ Master the basics of Rust programming language, from syntax to ownership concept
 ## Statistics
 
 - **Total Problems**: 76
-- **Completed**: 68
-- **Remaining**: 8
-- **Progress**: 89.5%
+- **Completed**: 74
+- **Remaining**: 2
+- **Progress**: 97.4%
 
 ---
 
