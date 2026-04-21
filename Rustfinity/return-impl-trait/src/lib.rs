@@ -1,5 +1,7 @@
-pub fn filter_starts_with<'a>(given: &'a [String], keyword: &'a str) -> impl Iterator<Item = &'a String>
-{
+pub fn filter_starts_with<'a>(
+    given: &'a [String],
+    keyword: &'a str,
+) -> impl Iterator<Item = &'a String> {
     given.iter().filter(move |s| s.starts_with(keyword))
 }
 

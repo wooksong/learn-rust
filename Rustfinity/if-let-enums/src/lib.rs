@@ -8,7 +8,7 @@ pub enum Message {
 pub fn process_text_message(message: &Message) -> String {
     if let Message::Text(message) = &message {
         return "Processed Text: ".to_string() + message;
-    } 
+    }
     String::from("Unhandled Message")
 }
 

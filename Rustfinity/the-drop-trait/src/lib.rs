@@ -1,7 +1,6 @@
-
-use std::{env, io};
 use std::fs::{self, File};
 use std::path::PathBuf;
+use std::{env, io};
 
 pub struct TempFile {
     pub path: PathBuf,
@@ -14,8 +13,8 @@ impl TempFile {
         path_tmp.push(path);
 
         File::create(&path_tmp)?;
-        Ok(Self{
-            path: PathBuf::from(&path_tmp)
+        Ok(Self {
+            path: PathBuf::from(&path_tmp),
         })
     }
 }

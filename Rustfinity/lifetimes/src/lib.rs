@@ -1,6 +1,10 @@
 pub fn longest<'a>(lhs: &'a str, rhs: &'a str) -> &'a str {
-    if lhs.chars().count() >= rhs.chars().count() { lhs } else { rhs }
-} 
+    if lhs.chars().count() >= rhs.chars().count() {
+        lhs
+    } else {
+        rhs
+    }
+}
 
 // Example usage
 pub fn main() {

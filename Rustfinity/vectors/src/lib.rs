@@ -1,5 +1,5 @@
 pub fn add_elements(vec: &mut Vec<i32>, elements: &[i32]) {
-    vec.extend_from_slice(elements);    
+    vec.extend_from_slice(elements);
 }
 
 pub fn remove_element(vec: &mut Vec<i32>, index: usize) {

@@ -8,14 +8,10 @@ pub fn describe_animal(animal: &Animal) -> String {
     match animal {
         Animal::Dog => "A friendly dog.".to_string(),
         Animal::Cat(name) => format!("A cat named {name}."),
-        Animal::Bird{species, can_fly} => {
-            let flyable = if *can_fly {
-                "can"
-            } else {
-                "cannot"
-            };
+        Animal::Bird { species, can_fly } => {
+            let flyable = if *can_fly { "can" } else { "cannot" };
             format!("A {species} that {flyable} fly.")
-        },
+        }
     }
 }
 

@@ -10,6 +10,6 @@ pub fn card_description(card: &Card) -> String {
         Card::King => "King".to_string(),
         Card::Queen => "Queen".to_string(),
         Card::Jack => "Jack".to_string(),
-        Card::Numbered(value, suit) => format!("{value} of {suit}")
+        Card::Numbered(value, suit) => format!("{value} of {suit}"),
     }
 }

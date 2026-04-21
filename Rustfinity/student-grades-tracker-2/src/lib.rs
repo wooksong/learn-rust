@@ -22,7 +22,7 @@ impl Student {
         for &grade in self.grades.iter() {
             let g = grade as f64;
             sum += g;
-        }        
+        }
 
         sum / self.grades.len() as f64
     }

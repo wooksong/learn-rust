@@ -25,7 +25,7 @@ pub fn parse_percentage(input: &str) -> Result<u8, ParsePercentageError> {
             } else {
                 return Ok(num);
             }
-        },
+        }
         Err(_) => Err(ParsePercentageError::InvalidInput),
     }
 }

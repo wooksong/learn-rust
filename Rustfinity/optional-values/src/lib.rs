@@ -3,7 +3,7 @@ pub fn find_first_even(numbers: &[i32]) -> Option<i32> {
         match i % 2 {
             0 => {
                 return Some(*i);
-            },            
+            }
             _ => continue,
         }
     }

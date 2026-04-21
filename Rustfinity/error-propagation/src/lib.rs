@@ -11,7 +11,7 @@ pub fn sum_integers_from_file(file_path: &str) -> Result<i32, io::Error> {
         let num = line?
             .parse::<i32>()
             .map_err(|e| io::Error::new(io::ErrorKind::InvalidData, e))?;
-        
+
         sum += num;
     }
 

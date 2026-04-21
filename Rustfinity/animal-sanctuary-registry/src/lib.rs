@@ -4,7 +4,7 @@ type Collection = HashMap<String, Vec<String>>;
 
 pub fn add_animal_to_section(animal: &str, section: &str, registry: &mut Collection) {
     let k = String::from(section);
-    
+
     if !registry.contains_key(&k) {
         registry.insert(k, vec![String::from(animal)]);
     } else {
@@ -13,7 +13,7 @@ pub fn add_animal_to_section(animal: &str, section: &str, registry: &mut Collect
 
             if !v.contains(&e) {
                 v.push(e);
-            }            
+            }
         }
     }
 }

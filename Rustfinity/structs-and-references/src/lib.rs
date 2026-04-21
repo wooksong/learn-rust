@@ -6,9 +6,7 @@ pub struct TextFinder<'a> {
 // 2. Implement the struct and define the methods
 impl<'a> TextFinder<'a> {
     pub fn new(text: &'a str) -> Self {
-        Self {
-            text,
-        }    
+        Self { text }
     }
 
     pub fn find_first(&self, keyword: &str) -> Option<&'a str> {
@@ -16,9 +14,11 @@ impl<'a> TextFinder<'a> {
     }
 
     pub fn find_many(&self, keyword: &str) -> Vec<&'a str> {
-        self.text.lines().filter(|line| line.contains(keyword)).collect()
+        self.text
+            .lines()
+            .filter(|line| line.contains(keyword))
+            .collect()
     }
-
 }
 
 // Example usage
