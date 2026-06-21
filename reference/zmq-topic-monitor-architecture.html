@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZMQ Topic Monitor Architecture Reference</title>
+  <link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>ZMQ Topic Monitor Architecture</h1>
+    <p class="subtitle">A compact reference for the Rust TUI project.</p>
+  </header>
+
+  <section class="reference-box">
+    <h2>Boundary-first architecture</h2>
+    <pre><code>MessageSource --&gt; RawMessage --&gt; Parser --&gt; DomainEvent --&gt; AppState --&gt; Ratatui View</code></pre>
+    <p>The key design move is to keep ZMQ at the edge. The core application should not know whether messages came from libzmq, a test fixture, a file replay, or an in-process fake.</p>
+  </section>
+
+  <section>
+    <h2>Core types</h2>
+    <ul>
+      <li><code>RawMessage</code>: bytes plus topic metadata exactly as received.</li>
+      <li><code>DomainEvent</code>: validated, parsed information the app understands.</li>
+      <li><code>ParseError</code>: a recoverable failure displayed in the UI instead of crashing ingestion.</li>
+      <li><code>AppState</code>: deterministic state updated by applying events.</li>
+      <li><code>MessageSource</code>: trait hiding fake, replay, blocking ZMQ, or async ZMQ sources.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Testing rule</h2>
+    <p>Tests should target <code>Parser</code> and <code>AppState::apply</code> before real networking. A fake source should produce deterministic <code>RawMessage</code> values so failures explain Rust design mistakes, not socket timing.</p>
+  </section>
+
+  <section>
+    <h2>Concurrency rule</h2>
+    <p>One loop owns ingestion; one loop owns UI state/rendering. They communicate through channels. Avoid shared mutable state until there is a measured reason to need it.</p>
+  </section>
+
+  <section>
+    <h2>Primary sources</h2>
+    <ul>
+      <li><a href="https://zguide.zeromq.org/">The ZeroMQ Guide</a></li>
+      <li><a href="https://docs.rs/crate/zmq/latest">zmq crate documentation</a></li>
+      <li><a href="https://ratatui.rs/">Ratatui documentation</a></li>
+    </ul>
+  </section>
+</main>
+</body>
+</html>

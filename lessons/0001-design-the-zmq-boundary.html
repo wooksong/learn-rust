@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lesson 0001 — Design the ZMQ Boundary</title>
+  <link rel="stylesheet" href="../assets/course.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>Design the ZMQ Boundary</h1>
+    <p class="subtitle">First Rust move: make the real socket somebody else's problem.</p>
+  </header>
+
+  <section class="card">
+    <h2>The tangible win</h2>
+    <p>By the end of this lesson, you will have the first testable seam of the TUI project: a domain model that can accept topic messages without needing a real ZMQ socket.</p>
+    <p>This matters because <a href="https://zguide.zeromq.org/">ZeroMQ</a> is a messaging system with real timing and delivery behavior, while early Rust learning needs deterministic feedback. We will put ZMQ behind a boundary, then test the core with fake messages.</p>
+  </section>
+
+  <section>
+    <h2>Concept: isolate effects from state transitions</h2>
+    <p>In C, you may be tempted to start with the socket loop: connect, subscribe, receive, parse, update globals, draw UI. In Rust, that quickly tangles ownership, lifetimes, blocking IO, and UI mutation.</p>
+    <p>The Rust-native shape is cleaner:</p>
+    <pre><code>MessageSource --&gt; RawMessage --&gt; Parser --&gt; DomainEvent --&gt; AppState --&gt; View</code></pre>
+    <p>The core idea is: <strong>make state transitions pure and testable before attaching real IO</strong>. Ratatui rendering can later read <code>AppState</code>, and a ZMQ adapter can later implement <code>MessageSource</code>. See the <a href="../reference/zmq-topic-monitor-architecture.html">architecture reference</a>.</p>
+  </section>
+
+  <section>
+    <h2>Why this teaches Rust</h2>
+    <ul>
+      <li><strong>Ownership</strong>: <code>RawMessage</code> owns topic and payload bytes, so the UI never borrows from a socket buffer that has already moved on.</li>
+      <li><strong>Traits</strong>: <code>MessageSource</code> lets tests use a fake source while production uses <a href="https://docs.rs/crate/zmq/latest">the <code>zmq</code> crate</a>.</li>
+      <li><strong>Concurrency</strong>: later, ingestion and rendering can be separate loops connected by channels, instead of shared mutable state.</li>
+      <li><strong>TDD</strong>: tests can verify topic counts, parse errors, and state updates without timing-sensitive networking.</li>
+    </ul>
+  </section>
+
+  <section class="quiz">
+    <h2>Quick retrieval quiz</h2>
+    <p>Answer from memory first. Then open each answer.</p>
+
+    <details>
+      <summary>1. What should the first tests target: real ZMQ sockets, Ratatui drawing, or state transitions?</summary>
+      <p><strong>State transitions.</strong> The first reliable tests should target parsing and <code>AppState::apply</code>, because they are deterministic and central to the application.</p>
+    </details>
+
+    <details>
+      <summary>2. Why should <code>RawMessage</code> own its topic and payload?</summary>
+      <p>Because messages cross boundaries. Owning the data avoids borrowed socket-buffer lifetimes leaking into parsing, state, or rendering code.</p>
+    </details>
+
+    <details>
+      <summary>3. What is the purpose of a <code>MessageSource</code> trait?</summary>
+      <p>It hides where messages come from. Tests can use fake messages; production can use a ZMQ adapter; replay tools can use a file source.</p>
+    </details>
+  </section>
+
+  <section class="task">
+    <h2>TDD task: create the first core module</h2>
+    <p>Create a new project for the monitor, then write the first failing tests before implementation.</p>
+
+    <h3>Setup</h3>
+    <pre><code>cargo new zmq-topic-monitor
+cd zmq-topic-monitor</code></pre>
+
+    <h3>Red: write tests first</h3>
+    <p>In <code>src/lib.rs</code>, write tests for this behavior:</p>
+    <ol class="checklist">
+      <li>A new <code>AppState</code> has zero total messages.</li>
+      <li>Applying a <code>RawMessage</code> with topic <code>"thermal.cpu"</code> increments total messages to one.</li>
+      <li>Applying two messages with different topics records a per-topic count for each.</li>
+    </ol>
+
+    <h3>Green: implement the minimum</h3>
+    <p>Implement only enough to pass:</p>
+    <pre><code>pub struct RawMessage {
+    pub topic: String,
+    pub payload: Vec&lt;u8&gt;,
+}
+
+#[derive(Default)]
+pub struct AppState {
+    // choose fields after the tests force them
+}
+
+impl AppState {
+    pub fn apply_raw(&mut self, msg: RawMessage) {
+        // update counts
+    }
+}</code></pre>
+
+    <h3>Refactor prompt</h3>
+    <p>After tests pass, ask: should <code>apply_raw</code> consume <code>RawMessage</code>, borrow it, or accept a parsed event instead? Do not change it yet — write down your answer and why.</p>
+  </section>
+
+  <section>
+    <h2>Primary source</h2>
+    <p>Read the ZeroMQ Guide's opening explanation of messaging patterns: <a href="https://zguide.zeromq.org/">The ZeroMQ Guide</a>. For now, focus on the idea that socket behavior belongs at the edge of the program, not in the core state model.</p>
+  </section>
+
+  <section class="card">
+    <h2>When you finish</h2>
+    <p>Send me your <code>src/lib.rs</code> or the compiler/test errors. I will review it like a Rust coach: first correctness, then ownership shape, then idiom.</p>
+    <p class="small">Ask follow-up questions immediately if the trait boundary, ownership choice, or test shape feels unclear.</p>
+  </section>
+</main>
+</body>
+</html>
