@@ -30,7 +30,7 @@ cargo test
 ```
 
 - Commit after each phase, not after every tiny mission.
-- Keep learning materials in this `TDD/` directory. Apply code changes to `streamlab-native` only when executing a mission.
+- Keep learning materials in this track directory (`TDD/streamlab-downloader/`). Apply code changes to `streamlab-native` only when executing a mission.
 
 ## Mission template
 
