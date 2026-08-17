@@ -1,3 +1,9 @@
 [submodule "100-exercises-to-learn-rust"]
 	path = 100-exercises-to-learn-rust
 	url = https://github.com/wooksong/100-exercises-to-learn-rust.git
+[submodule "reference/unist-rust-minecraft"]
+	path = reference/unist-rust-minecraft
+	url = https://github.com/utilForever/2023-UNIST-Rust-Minecraft
+[submodule "reference/focustime"]
+	path = reference/focustime
+	url = https://github.com/utilForever/focustime
