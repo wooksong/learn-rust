@@ -7,4 +7,4 @@ Solutions to [Rustfinity](https://www.rustfinity.com/) tracks.
 | Track | Progress |
 | --- | --- |
 | [Rust Fundamentals](./rust-fundamentals/) | 76/76 (100%) |
-| [Control Flow](./control-flow/) | 14/15 (93%) |
+| [Control Flow](./control-flow/) | 15/15 (100%) |

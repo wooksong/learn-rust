@@ -18,14 +18,14 @@ Learn how to control the flow of your Rust program using loops and conditional s
 - [x] Median and mode `[MEDIUM]`
 - [x] Find the First Palindrome `[HARD]`
 - [x] Finite State Automaton `[HARD]`
-- [ ] Maze Solver `[HARD]`
+- [x] Maze Solver `[HARD]`
 
 ## Statistics
 
 - **Total Problems**: 15
-- **Completed**: 14
-- **Remaining**: 1 (Maze Solver — no accepted submission yet)
-- **Progress**: 93%
+- **Completed**: 15
+- **Remaining**: 0
+- **Progress**: 100%
 
 ---
 
