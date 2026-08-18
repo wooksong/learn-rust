@@ -6,13 +6,13 @@
 
 ## Phase 1: 데이터 처리 라이브러리 마스터 (완료 목표: 2026-10)
 
-| 트랙 | 상태 | 핵심 학습 | 산출물 (practice/) |
+| 트랙 | 상태 | 핵심 학습 | 산출물 (TDD/<트랙>/) |
 |------|------|-----------|-------------------|
-| crc-hash-toolkit | 🟡 진행 예정 | 해시 알고리즘, trait, streaming | `crc-hash-toolkit/` |
-| zip-inspector | ⏳ 대기 | 파일 포맷, 제로카피 파싱 | `zip-inspector/` |
-| dat-xml-parser | ⏳ 대기 | 스트리밍 XML, 빠른 파싱 | `dat-xml-parser/` |
-| tree-snapshot | ⏳ 대기 | 트리 직렬화, 스냅샷 테스트 | `tree-snapshot/` |
-| sqlite-repo-practice | ⏳ 대기 | 리포지토리 패턴, 마이그레이션 | `sqlite-repo/` |
+| crc-hash-toolkit | 🟡 진행 예정 | 해시 알고리즘, trait, streaming | `TDD/crc-hash-toolkit/` |
+| zip-inspector | ⏳ 대기 | 파일 포맷, 제로카피 파싱 | `TDD/zip-inspector/` |
+| dat-xml-parser | ⏳ 대기 | 스트리밍 XML, 빠른 파싱 | `TDD/dat-xml-parser/` |
+| tree-snapshot | ⏳ 대기 | 트리 직렬화, 스냅샷 테스트 | `TDD/tree-snapshot/` |
+| sqlite-repo-practice | ⏳ 대기 | 리포지토리 패턴, 마이그레이션 | `TDD/sqlite-repo/` |
 
 **완료 기준**: 각 트랙 `cargo test && cargo clippy -D warnings` 통과 + README 문서화
 
@@ -26,7 +26,7 @@
 | graphics-pipeline | Week 7-11 | wgpu, 셰이더, 배치 렌더링, 텍스처 아틀라스 | `minecraft-clone/renderer` |
 | chunk-system | Week 12-16 | 옥트리, 면 컬링, 심플렉스 노이즈, VBO 최적화 | `minecraft-clone/world` |
 
-**코드 스파인**: 단일 프로젝트 `practice/minecraft-clone/`로 통합
+**코드 스파인**: 단일 프로젝트 `TDD/minecraft-clone/`로 통합
 - 각 트랙 완료 시 해당 모듈이 `minecraft-clone`에 머지됨
 - **TDD**: 렌더러는 픽셀 스냅샷 테스트, 청크는 결정론적 생성 테스트
 
@@ -37,7 +37,7 @@
 | 트랙 | utilforever 매핑 | 핵심 학습 | 산출물 |
 |------|------------------|-----------|--------|
 | performance-optimization | Week 17-20 | 프로파일링, flamegraph, 자료구조 교체, 벤치마크 | `minecraft-clone` 최적화 + `perf-toolkit/` |
-| ecs-architecture | Week 21-25 | bevy_ecs/자체 ECS, 시스템 스케줄링, Archetype | `practice/ecs-framework/` (추출) |
+| ecs-architecture | Week 21-25 | bevy_ecs/자체 ECS, 시스템 스케줄링, Archetype | `TDD/ecs-framework/` (추출) |
 | parallel-world | Week 26+ | rayon, 스레드 풀, 무한 월드, 클라/서버 분리 | `minecraft-clone` 멀티스레드 + `game-server/` |
 
 **최종 포트폴리오**:
@@ -68,5 +68,6 @@
 ## 결정 기록
 
 - 2026-08-17: Phase 2/3 트랙 6개 추가 결정 (utilforever 커리큘럼 흡수)
+- 2026-08-17: `practice/` 폴더를 `TDD/<트랙>/`로 통합 — 코드 스파인(Cargo package)과 학습 자료를 한 디렉토리에
 - Phase 1 완료 전까지 Phase 2 스캐폴딩 하지 않음 (집중 유지)
 - 각 Phase 전환 시 마스터 로드맵 재검토

@@ -1,0 +1,12 @@
+[package]
+name = "chip8-emulator"
+version = "0.1.0"
+edition = "2021"
+description = "Rust + TDD learning track: CHIP-8 interpreter"
+
+# 디스플레이/입력 통합(Mission 23)에서 추가:
+# softbuffer + winit 또는 sdl2
+
+[dependencies]
+
+[dev-dependencies]
